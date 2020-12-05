@@ -1,0 +1,111 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(211, 247, 247);
+}
+
+.one {
+    background-color: rgb(43, 225, 245);
+    position: absolute;
+    top: 38%;
+    left: 50%;
+    width: 15vw;
+    height: 30vh;
+    z-index: 1;
+    box-shadow: 0 5px 5px 0 black;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+    /* border-radius: 15%; */
+    transition: width 1s, height 1s, left 1s, top 1s, border-radius 1s;
+}
+
+.two {
+    background-image: linear-gradient(180deg, rgb(4, 63, 105), rgb(114, 219, 248));
+    position: absolute;
+    top: 28%;
+    left: 40%;
+    width: 20vw;
+    height: 30vh;
+    z-index: 2;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    /* border-radius: 15%; */
+    box-shadow: 0 5px 5px 0 black;
+    transition: width 1s, height 1s, left 1s, top 1s, border-radius 1s;
+}
+
+.three {
+    background-color: rgb(43, 225, 245);
+    position: absolute;
+    top: 38%;
+    left: 35%;
+    width: 15vw;
+    height: 30vh;
+    z-index: 1;
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+    /* border-radius: 15%; */
+    box-shadow: 0 5px 5px 0 black;
+    transition: width 1s, height 1s, left 1s, top 1s, border-radius 1s;
+}
+
+.four {
+    background-image: linear-gradient(180deg, rgb(190, 221, 242), rgb(5, 230, 203));
+    position: absolute;
+    top: 48%;
+    left: 40%;
+    width: 20vw;
+    height: 30vh;
+    z-index: 4;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    /* border-radius: 15%; */
+    box-shadow: 0 5px 5px 0 black;
+    transition: width 1s, height 1s, left 1s, top 1s, border-radius 1s;
+}
+
+.icon_container svg {
+    width: 60vw;
+    height: 90vh;
+    fill: rgb(6, 121, 113);
+    animation: rotation linear 6s infinite;
+    transition: width 1s, height 1s, left 1s, top 1s, border-radius 1s;
+}
+
+.vertical-center {
+    margin: 0;
+    position: absolute;
+    top: 53.5%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+@keyframes rotation {
+    from {
+        /* fill: rgb(84, 164, 190); */
+        /* width: 100px;
+        height: 100px; */
+        -webkit-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    to {
+        /* fill: rgb(92, 196, 223); */
+        /* width: 120px;
+        height: 120px; */
+        -webkit-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+
+/* 
+.one:hover {
+    z-index: 5;
+    width: 50vh;
+    height: 50vh;
+} */
